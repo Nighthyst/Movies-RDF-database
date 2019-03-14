@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#"
      xml:base="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:Country="http://dbpedia.org/ontology/Country#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://dbpedia.org/ontology/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4"/>
     
 
@@ -18,6 +20,61 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://dbpedia.org/ontology/director -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/director"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/genre -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/genre">
+        <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/Country#OWLObjectProperty_3afda537_6473_4c65_ba15_a051ca72cdab"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/starring -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/starring">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#hasActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLObjectProperty_3afda537_6473_4c65_ba15_a051ca72cdab -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/Country#OWLObjectProperty_3afda537_6473_4c65_ba15_a051ca72cdab">
+        <owl:inverseOf rdf:resource="http://dbpedia.org/ontology/Country#OWLObjectProperty_458c1ea6_d388_4361_9a4c_4d1b1d25b857"/>
+        <rdfs:label xml:lang="fr">genreIs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLObjectProperty_458c1ea6_d388_4361_9a4c_4d1b1d25b857 -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/Country#OWLObjectProperty_458c1ea6_d388_4361_9a4c_4d1b1d25b857">
+        <rdfs:label xml:lang="fr">IsGenreOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLObjectProperty_5de8f877_45c4_4739_8c0f_4d86dbbc2223 -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/Country#OWLObjectProperty_5de8f877_45c4_4739_8c0f_4d86dbbc2223">
+        <rdfs:label xml:lang="fr">hasWriter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLObjectProperty_bf6066a8_07a9_4545_a54e_48414d70814c -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/Country#OWLObjectProperty_bf6066a8_07a9_4545_a54e_48414d70814c">
+        <rdfs:label xml:lang="fr">isWriterOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -69,6 +126,68 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://dbpedia.org/ontology/age -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/age">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#age"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthName -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/birthName">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/date -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/date">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#year"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/gender">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#gender"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/genre -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/genre"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/language -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/language">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/nationality">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#nationality"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/country -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/property/country">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#country"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -150,10 +269,112 @@
     
 
 
-    <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Action -->
+    <!-- http://dbpedia.org/ontology/Actor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Action">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Movie"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Actor">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MovieDirector -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MovieDirector">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MovieGenre -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MovieGenre">
+        <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLClass_100dfce1_1110_4720_a91b_1867ebe76104 -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country#OWLClass_100dfce1_1110_4720_a91b_1867ebe76104">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc"/>
+        <rdfs:label xml:lang="fr">Thriller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc">
+        <rdfs:label xml:lang="fr">MovieGenre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLClass_29a3bf58_2da4_42b5_888d_66ed02b76be5 -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country#OWLClass_29a3bf58_2da4_42b5_888d_66ed02b76be5">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc"/>
+        <rdfs:label xml:lang="fr">Comedy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLClass_513a39e4_2de5_41d6_bf19_bf84d62d9541 -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country#OWLClass_513a39e4_2de5_41d6_bf19_bf84d62d9541">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc"/>
+        <rdfs:label xml:lang="fr">Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLClass_5c94ec49_4e49_4aa3_ad11_22c22566913f -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country#OWLClass_5c94ec49_4e49_4aa3_ad11_22c22566913f">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc"/>
+        <rdfs:label xml:lang="fr">Crime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLClass_8083d7f9_f215_4d85_976c_e8ca1ee061f3 -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country#OWLClass_8083d7f9_f215_4d85_976c_e8ca1ee061f3">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc"/>
+        <rdfs:label xml:lang="fr">Drama</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLClass_848a24e1_5466_452b_8f79_9c612267c150 -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country#OWLClass_848a24e1_5466_452b_8f79_9c612267c150">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_220e22c5_c146_4b33_9b9c_80d7b2d8fefc"/>
+        <rdfs:label xml:lang="fr">Scifi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/page/Screenwriter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/page/Screenwriter">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fr.dbpedia.org/ontology/Film -->
+
+    <owl:Class rdf:about="http://fr.dbpedia.org/ontology/Film">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Movie"/>
     </owl:Class>
     
 
@@ -166,34 +387,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Comedy -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Comedy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Movie"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Crime -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Crime">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Movie"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Director -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Director">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Person"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Drama -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Drama">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Movie"/>
     </owl:Class>
     
 
@@ -210,30 +407,94 @@
     
 
 
-    <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Scifi -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Scifi">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Movie"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Thriller -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Thriller">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Movie"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Writer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Writer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Person"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLNamedIndividual_1a41d152_1399_4166_84c6_5497015aeb0b -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/Country#OWLNamedIndividual_1a41d152_1399_4166_84c6_5497015aeb0b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Actor"/>
+        <isActorOf rdf:resource="http://dbpedia.org/ontology/Country#OWLNamedIndividual_b2832dee_6997_4bdf_95cb_a2cbc7d89358"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">59</age>
+        <gender>Male</gender>
+        <nationality>American</nationality>
+        <rdfs:label xml:lang="fr">John Travolta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLNamedIndividual_647c97e9_42a0_43cd_a46d_418d36edf031 -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/Country#OWLNamedIndividual_647c97e9_42a0_43cd_a46d_418d36edf031">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_100dfce1_1110_4720_a91b_1867ebe76104"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_513a39e4_2de5_41d6_bf19_bf84d62d9541"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_5c94ec49_4e49_4aa3_ad11_22c22566913f"/>
+        <country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</country>
+        <language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">english</language>
+        <rdfs:label xml:lang="fr">Kill Bill (volume 1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLNamedIndividual_b2832dee_6997_4bdf_95cb_a2cbc7d89358 -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/Country#OWLNamedIndividual_b2832dee_6997_4bdf_95cb_a2cbc7d89358">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_100dfce1_1110_4720_a91b_1867ebe76104"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country#OWLClass_5c94ec49_4e49_4aa3_ad11_22c22566913f"/>
+        <country>USA</country>
+        <language>english</language>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1994</year>
+        <rdfs:label xml:lang="fr">Pulp Fiction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLNamedIndividual_c4bb238a_6a77_48b6_9b04_19b8336c787e -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/Country#OWLNamedIndividual_c4bb238a_6a77_48b6_9b04_19b8336c787e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Writer"/>
+        <Country:OWLObjectProperty_bf6066a8_07a9_4545_a54e_48414d70814c rdf:resource="http://dbpedia.org/ontology/Country#OWLNamedIndividual_647c97e9_42a0_43cd_a46d_418d36edf031"/>
+        <isActorOf rdf:resource="http://dbpedia.org/ontology/Country#OWLNamedIndividual_b2832dee_6997_4bdf_95cb_a2cbc7d89358"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</age>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</gender>
+        <rdfs:label xml:lang="fr">Uma Thurman</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country#OWLNamedIndividual_fc6a2320_db33_4d78_a485_18bd9a8d6e9c -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/Country#OWLNamedIndividual_fc6a2320_db33_4d78_a485_18bd9a8d6e9c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/han/ontologies/2019/2/untitled-ontology-4#Writer"/>
+        <isActorOf rdf:resource="http://dbpedia.org/ontology/Country#OWLNamedIndividual_647c97e9_42a0_43cd_a46d_418d36edf031"/>
+        <isActorOf rdf:resource="http://dbpedia.org/ontology/Country#OWLNamedIndividual_b2832dee_6997_4bdf_95cb_a2cbc7d89358"/>
+        <ontology:gender>Male</ontology:gender>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">59</age>
+        <nationality>American</nationality>
+        <rdfs:label xml:lang="fr">Quentin Tarantino</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
